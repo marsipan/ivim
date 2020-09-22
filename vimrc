@@ -7,6 +7,10 @@ execute pathogen#infect('~/ivim/{}')
 syntax on
 filetype plugin indent on
 
+"Lars additions
+set number "shows the number column to the left
+set numberwidth=3 "sets the width of the number column
+
 " Some basic options
 set completeopt=noinsert,menuone,noselect
 set history=500
@@ -49,9 +53,12 @@ set undofile
 " colorscheme seoul
 " colorscheme abstract
 " colorscheme afterglow
-set background=dark
-colorscheme scheakur
-ifont iosevka-fixed-ss04-extended 18
+" set background=dark "switched this off
+" colorscheme scheakur
+colorscheme solarized8 "changed to this
+
+"ifont iosevka-fixed-ss04-extended 18
+ifont iosevka-term-regular 16 "changed the font to this, because it has ligatures. Term because it is narrower
 
 let mapleader=","
 let maplocalleader=","
